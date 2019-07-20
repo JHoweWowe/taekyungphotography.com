@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Tae Kyung Hwang's Photography Website</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Setup Basics- Import Google Fonts from googleapis and Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Raleway|Barriecito"/>
+
+  <body>
+
+    <!--The navigationBar shall be displayed on top of website -->
+    <nav class="navbar navbar-default" id="navigationBar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a style="font-size:24px" class="navbar-brand" href="#"><b>Tae Kyung Hwang</b></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a style="font-size:16px" href="#about-tk-text">Bio</a></li>
+          <li><a style="font-size:16px" href="#portraits">Portraits</a></li>
+          <li><a style="font-size:16px" href="#contact-details">Contact Info</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Images slideshow should have images of the same dimensions classified as 1280 x 720p -->
+    <!-- Acts as the jumbotron -->
+    <div class="slideShowContainer">
+
+      <div class="mySlides">
+        <div class="numberText">1 / 5</div>
+        <img src="images/landscape/LandscapeShot.jpg" style="width:100%"/>
+        <div class="captionText">Sunset</div>
+      </div>
+      <div class="mySlides">
+        <div class="numberText">2 / 5</div>
+        <img src="images/landscape/LandscapeShot2Cropped.jpg" style="width:100%"/>
+        <div class="captionText">Football Stadium</div>
+      </div>
+      <div class="mySlides">
+        <div class="numberText">3 / 5</div>
+        <img src="images/landscape/LandscapeShot3.jpg" style="width:100%"/>
+        <div class="captionText">Purple Sky</div>
+      </div>
+      <div class="mySlides">
+        <div class="numberText">4 / 5</div>
+        <img src="images/landscape/LandscapeShot4Cropped.jpg" style="width:100%"/>
+        <div class="captionText">Electric Lights</div>
+      </div>
+      <div class="mySlides">
+        <div class="numberText">5 / 5</div>
+        <img src="images/landscape/LandscapeShot5Cropped.jpg" style="width:100%"/>
+        <div class="captionText">Beach Memories</div>
+      </div>
+
+      <!-- Display the next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+
+    <section class="about-tk-container">
+      <div class="row-text">
+        <h2 id="about-tk-text">About TK</h2>
+        <h3>While Tae Kyung was enrolled in Savannah College of Art and Design for two years, TK
+        has developed a strong interest in both digital and film photography. He has further pursued his passion by becoming a photographer intern in SAS.
+        He is currently serving his National Service in Korea in the Recon unit and hopes to return back to
+        the photography industry by April 2020. He hopes his portfolio will encourage people to feel the
+        best moment in every occasion.</h3>
+        <a href="TK-Resume.pdf" class="btn btn-primary" role="button">View Resume</a>
+      </div>
+    </section>
+
+
+    <!-- Portraits which triggers open and close the modal -->
+    <section class="portraits-container">
+			<div class="row-text">
+				<h2 id="portraits">Portraits</h2>
+					<figure class="col-sm-3">
+						<img id="pic1" src="images/Romance.jpg" alt="Romance" class="img-rounded" style="width:100%; max-width:300px">
+            <div id="myModal1" class="modal">
+
+                <span class="close">&times;</span>
+
+                <img class="modal-content" id="img01">
+
+                <div id="caption1"></div>
+            </div>
+          </figure>
+
+					<figure class="col-sm-3">
+            <img id="pic2" src="images/Lucia1.jpg" alt="Lucia" class="img-rounded" style="width:100%; max-width:300px">
+            <div id="myModal2" class="modal">
+
+              <span class="close">&times;</span>
+
+              <img class="modal-content" id="img02">
+
+              <div id="caption2"></div>
+
+            </div>
+					</figure>
+
+
+					<figure class="col-sm-3">
+						<img id="pic3" src="images/Dark.jpg" alt="Dark" class="img-rounded" style="width:100%; max-width:300px">
+            <div id="myModal3" class="modal">
+
+              <span class="close">&times;</span>
+
+              <img class="modal-content" id="img03">
+
+              <div id="caption3"></div>
+            </div>
+					</figure>
+
+
+					<figure class="col-sm-3">
+						<img id="pic4" src="images/Orange.jpg" alt="Orange" class="img-rounded" style="width:100%; max-width:300px">
+            <div id="myModal4" class="modal">
+
+              <span class="close">&times;</span>
+
+              <img class="modal-content" id="img04">
+
+              <div id="caption4"></div>
+            </div>
+					</figure>
+			</div>
+		</section>
+
+		<section class="contact-details-container">
+			<div class="row-text">
+				<h2 id="contact-details">Contact Details</h2>
+				<h3>Don't hesitate to contact TK through
+					<a href="mailto:tk120997@gmail.com?Subject=Inquiries" target="_top">email</a>
+					or visit his social media links down below!</h3>
+				<!--TK's Social Media Links-->
+				<a href="https://www.facebook.com/TKphotoboy/" target="_blank">
+				<img src="images/facebook-logo.png" alt="Facebook Logo" width="100px" height="100px" class="img-rounded"></a>
+				<a href="https://www.instagram.com/tk_photoboy/" target="_blank">
+				<img src="images/Instagram-logo.png" width="100px" height="100px" class="img-rounded"></a>
+				<a href="https://www.linkedin.com/in/tae-kyung-hwang-29396a152/" target="_blank">
+				<img src="images/LinkedInLogo.jpg" width="100px" height="100px" class="img-rounded"></a>
+				<a href="https://www.behance.net/tkhwang" target="_blank">
+				    <img src="images/Behance-logo.png" width="100px" height="100px" class="img-rounded"></a>
+			</div>
+		</section>
+
+		<footer class="copyright-container">
+			<div class="row-text">
+				<h4 class="col-sm-3">&copy 2019 Justin Howe / TK Hwang</h4>
+				<h5 class="col-sm-9">Website entirely developed and designed by Justin Howe
+				<br>Photographs taken by Tae Kyung Hwang</h5>
+
+			</div>
+
+
+
+
+
+
+
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src= "script.js"></script>
+
+  </body>
+
+</head>
